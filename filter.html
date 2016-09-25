@@ -4,7 +4,7 @@
 <head>
     <meta lang=nl charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style_index.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <title>99 Verhalen voor Onderweg</title>
 </head>
@@ -14,7 +14,7 @@
         <nav>
             <a href="filter.html">Filter</a>
             <h1>99 VERHALEN</h1>
-            <a href="login.html">Account</a>
+            <a href="accountPagina.html">Account</a>
         </nav>
         
            <form class="searchBar">
@@ -31,7 +31,37 @@
             </select>
         </form>
         
-        </header>
+        <nav>
+            <form class="filter" method="get">
+			<fieldset>
+				<legend>Filter op Thema:</legend>
+				<label>
+					<input type="checkbox" name="Romantiek" value="grof" />Grof</label>
+				<label>
+					<input type="checkbox" name="Horror" value="roman" />Geromantiseerd</label>
+				<label>
+					<input type="checkbox" name="Avontuur" value="kind" />Kinderlijk</label>
+			</fieldset>
+			<fieldset>
+				<legend>Filter op kleur:</legend>
+				<label>
+					<input type="checkbox" name="blauw" value="Molovich" /><span class="blauwLabel">Blauw</span></label>
+				<label>
+					<input type="checkbox" name="roze" value="Luijten" /><span class="rozeLabel">Roze</span></label>
+				<label>
+					<input type="checkbox" name="groen" value="all" /><span class="groenLabel">Groen</span></label>
+			</fieldset>
+			<fieldset>
+				<legend>Aantal woorden:</legend>
+				<input type="range" name="worden" min="0" max="1000">
+				<input type="submit">
+			</fieldset>
+		</form>
+            
+            
+        </nav>
+
+    </header>
        
         <div class="container">
         <section class="blauw">
